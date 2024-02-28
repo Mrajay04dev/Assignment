@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 mongoose
-  .connect("mongodb://localhost:27017/test")
+  .connect("mongodb+srv://ajaybro9811:ajay@cluster0.fqetx3f.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {
     console.log("Connected to MongoDB");
     app.listen(port, () => {
